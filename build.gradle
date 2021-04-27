@@ -33,7 +33,7 @@ repositories {
     maven {
         // because Srg2Source needs an eclipse dependency.
         name = "eclipse"
-        url = "https://repo.eclipse.org/content/groups/eclipse/"
+        url = "https://maven.covertdragon.team/repository/internal/"
     }
     jcenter() // get as many deps from here as possible
     mavenCentral()
