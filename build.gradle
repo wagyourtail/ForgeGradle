@@ -19,7 +19,6 @@ apply plugin: 'license'
 
 group = 'net.minecraftforge.gradle'
 version = '2.2-SNAPSHOT'
-//version = '2.2.1'
 archivesBaseName = 'ForgeGradle'
 targetCompatibility = '1.6'
 sourceCompatibility = '1.6'
@@ -33,7 +32,10 @@ repositories {
     maven {
         // because Srg2Source needs an eclipse dependency.
         name = "eclipse"
-        url = "https://repo.eclipse.org/content/groups/eclipse/"
+        url = "https://gitlab.com/EMC-Framework/maven/raw/master/"
+    }
+    maven {
+        url = "https://maven.covertdragon.team/repository/internal/"
     }
     jcenter() // get as many deps from here as possible
     mavenCentral()
